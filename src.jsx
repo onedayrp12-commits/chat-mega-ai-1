@@ -1,0 +1,3 @@
+import React from 'react';import{createRoot}from'react-dom/client';import'./style.css';
+function App(){return <main><header><b>👑 MeGa AI</b><span>لوحة تحكم المالك</span></header><h1>مركز إدارة MeGa AI</h1><p>نظرة عامة على المنصة</p><section>{['المستخدمون','المحادثات','طلبات الدعم'].map(x=><article key={x}><small>{x}</small><h2>—</h2><p>سيظهر بعد ربط قاعدة البيانات</p></article>)}</section><article><h3>أقسام الإدارة</h3><p>إدارة المستخدمين · الاشتراكات · الدعم الفني · إعدادات الذكاء الاصطناعي · سجل النشاطات</p></article><aside>واجهة تجريبية فقط. أضف تسجيل دخول وصلاحيات قبل نشر لوحة الإدارة.</aside></main>}
+createRoot(document.getElementById('root')).render(<App/>);
